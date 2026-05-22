@@ -1,6 +1,8 @@
-# Build artifacts
-proxy
-proxy-binary
+# Built binaries (the executable from `go build -o proxy .`)
+# Anchored to repo root + explicit names so we don't accidentally ignore
+# a source directory called "proxy/".
+/proxy
+/socks5-proxy
 *.exe
 
 # Test artifacts
@@ -14,3 +16,7 @@ tests/proxy-binary
 
 # Go
 vendor/
+
+# Reapply negation in case /proxy ever shadowed the source directory:
+# (this pattern is for the source dir, which we want tracked)
+!proxy/**
