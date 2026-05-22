@@ -3,6 +3,7 @@
 **Web Development Course** — Homework 1 (assigned 2026-05-11, **due Monday May 25, 2026 23:59**).
 
 For the full specification, see `hw1-specification.docx` (linked from the course LMS).
+Starter template repository: <https://github.com/Web-Course-Development/hw1-socks5-proxy-template>
 
 ---
 
@@ -39,7 +40,7 @@ This assignment is distributed and graded through **GitHub Classroom**. Your rep
 # 1. Open the GitHub Classroom invitation link from the LMS announcement
 # 2. Accept the assignment — GitHub creates a private repo for you
 # 3. Clone it locally:
-git clone https://github.com/<course-org>/hw1-socks5-proxy-<your-username>.git
+git clone https://github.com/Web-Course-Development/hw1-socks5-proxy-<your-username>.git
 cd hw1-socks5-proxy-<your-username>
 ```
 
