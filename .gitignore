@@ -1,7 +1,6 @@
-# Built binaries (the executable from `go build -o proxy .`)
-# Anchored to repo root + explicit names so we don't accidentally ignore
-# a source directory called "proxy/".
-/proxy
+# Built binary
+# Use `go build -o socks5-proxy .` (not `proxy`) so it doesn't collide with
+# the conventional proxy/ source subdirectory.
 /socks5-proxy
 *.exe
 
@@ -16,7 +15,3 @@ tests/proxy-binary
 
 # Go
 vendor/
-
-# Reapply negation in case /proxy ever shadowed the source directory:
-# (this pattern is for the source dir, which we want tracked)
-!proxy/**

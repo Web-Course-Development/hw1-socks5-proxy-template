@@ -48,8 +48,8 @@ cd hw1-socks5-proxy-<your-username>
 
 ```bash
 # Edit main.go (and any helper files you add)
-go build -o proxy .           # verify it compiles
-./proxy -port 1080            # smoke-test it manually
+go build -o socks5-proxy .           # verify it compiles
+./socks5-proxy -port 1080            # smoke-test it manually
 cd tests && go test -v        # run the autograder locally
 cd ..
 
@@ -79,13 +79,13 @@ git push
 
 ```bash
 # Build
-go build -o proxy .
+go build -o socks5-proxy .
 
 # Run without auth
-./proxy -port 1080
+./socks5-proxy -port 1080
 
 # Run with auth
-PROXY_USER=admin PROXY_PASS=secret ./proxy -port 1080
+PROXY_USER=admin PROXY_PASS=secret ./socks5-proxy -port 1080
 
 # Test with curl (no auth)
 curl -v -x socks5://localhost:1080 http://httpbin.org/get
