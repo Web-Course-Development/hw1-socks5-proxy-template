@@ -1,0 +1,16 @@
+# Build artifacts
+proxy
+proxy-binary
+*.exe
+
+# Test artifacts
+tests/proxy-binary
+
+# IDE and OS
+.idea/
+.vscode/
+.DS_Store
+*.swp
+
+# Go
+vendor/
