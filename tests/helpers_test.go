@@ -24,8 +24,9 @@ func setupProxy(t *testing.T, port int, envVars ...string) *exec.Cmd {
 	out, err := buildCmd.CombinedOutput()
 	require.NoError(t, err, "build failed: %s", string(out))
 
-	// Launch the binary
-	cmd := exec.Command("../proxy-binary", "-port", strconv.Itoa(port))
+	// Launch the binary. Path is resolved AFTER chdir to cmd.Dir, so use
+	// "./proxy-binary" (binary lives at repo root where the build wrote it).
+	cmd := exec.Command("./proxy-binary", "-port", strconv.Itoa(port))
 	cmd.Dir = ".."
 	cmd.Stdout = os.Stdout
 	cmd.Stderr = os.Stderr
