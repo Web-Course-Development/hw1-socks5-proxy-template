@@ -1,6 +1,6 @@
 # HW1: SOCKS5 Proxy Server
 
-**Web Development Course** — Homework 1 (assigned 2026-05-11, **due Monday May 25, 2026 23:59**).
+**Web Development Course** — Homework 1 (assigned 2026-05-23, **due Saturday June 6, 2026 23:59**).
 
 For the full specification, see `hw1-specification.docx` (linked from the course LMS).
 Starter template repository: <https://github.com/Web-Course-Development/hw1-socks5-proxy-template>
@@ -145,7 +145,7 @@ Two deliverables per `hw1-specification.docx`:
 1. **Code** — pushed to this GitHub Classroom repo. **100 points** total (10 tests × 10).
 2. **Word document** — uploaded to the LMS. Required pass/fail deliverable with four sections: architecture diagram, key design decisions, screenshots, challenges encountered.
 
-**Deadline: Monday, May 25, 2026, 23:59 local time.**
+**Deadline: Saturday, June 6, 2026, 23:59 local time.**
 
 ---
 
